@@ -1,0 +1,6 @@
+{
+  "name": "Studivo - Android Web App & Notification Hub",
+  "description": "Android application wrapper, mobile PWA, and push notification system for Studivo by Mantechion.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
