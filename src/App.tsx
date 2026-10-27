@@ -241,22 +241,32 @@ export default function App() {
                   </div>
                 </div>
 
-                <div className="mt-5 grid grid-cols-2 gap-2">
-                  <button
-                    onClick={() => setActiveView('notifications')}
-                    className="p-2.5 rounded-xl bg-blue-600/20 hover:bg-blue-600/30 border border-blue-500/30 text-blue-300 text-xs font-semibold flex items-center justify-center gap-1.5 transition"
-                  >
-                    <Bell className="w-3.5 h-3.5" />
-                    <span>Test Push</span>
-                  </button>
-
+                <div className="mt-5 space-y-2">
                   <button
                     onClick={() => setShowApkModal(true)}
-                    className="p-2.5 rounded-xl bg-slate-800 hover:bg-slate-750 border border-slate-700 text-slate-200 text-xs font-semibold flex items-center justify-center gap-1.5 transition"
+                    className="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold p-3.5 rounded-2xl shadow-xl flex items-center justify-center gap-2.5 transition active:scale-95 text-sm animate-pulse"
                   >
-                    <Download className="w-3.5 h-3.5 text-blue-400" />
-                    <span>Get APK</span>
+                    <Download className="w-5 h-5" />
+                    <span>📥 Download Studivo APK (यहाँ क्लिक करें)</span>
                   </button>
+
+                  <div className="grid grid-cols-2 gap-2">
+                    <button
+                      onClick={() => setActiveView('notifications')}
+                      className="p-2.5 rounded-xl bg-blue-600/20 hover:bg-blue-600/30 border border-blue-500/30 text-blue-300 text-xs font-semibold flex items-center justify-center gap-1.5 transition"
+                    >
+                      <Bell className="w-3.5 h-3.5" />
+                      <span>Test Push</span>
+                    </button>
+
+                    <button
+                      onClick={() => setShowApkModal(true)}
+                      className="p-2.5 rounded-xl bg-slate-800 hover:bg-slate-750 border border-slate-700 text-slate-200 text-xs font-semibold flex items-center justify-center gap-1.5 transition"
+                    >
+                      <Smartphone className="w-3.5 h-3.5 text-emerald-400" />
+                      <span>Install Guide</span>
+                    </button>
+                  </div>
                 </div>
               </div>
 
